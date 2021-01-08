@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+
+  <title>Order Form</title>
+  <meta
+    name="description"
+    content="Website with all the details for Adam and Ellie's wedding."
+  />
+</head>
+
+<body style="max-height: 100%">
+  <div class="container">
+
+    <div class="container" style="max-height: 100%;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12col-md-12 col-lg-12 col-xl-12">
+          <br />
+          <div class="alert alert-light text-center" style="font-size: 35px;" role="alert">
+            <h1>Order Form</h1>
+          </div>  
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12col-md-12 col-lg-12 col-xl-12">
+              <form action="/party/new_party" method="POST">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" aria-label="first name"
+                      placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="hostSurname">Surname</label>
+                    <input type="text" class="form-control" id="surname" name="surname" aria-label="surname" placeholder="Surname"
+                      required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Email address</label>
+                  <input type="email" class="form-control" id="email_address" name="email_address" aria-label="email address"
+                    placeholder="email@example.co.uk" required>
+                </div>
+                <div class="form-group">
+                  <label for="partyLocation">Food option</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Hog Roast</option>
+                    <option>Paella</option>
+                    <option>Vegetarian</option>
+                    <option>Vegan</option>
+                    <option>Other - Please specify below</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Please enter any alergies or food requirementes here</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Staying for the evening knees up?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      No
+                    </label>
+                  </div>
+                  <br/>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">If Yes, please enter any music requests (no Abba!)</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class='form-row justify-content-md-center'>
+                    <div class="form-group col-md-3 justify-content-md-center">
+                      <button type="submit" class="btn btn-success btn-lg">Submit Form</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer text-secondary" style="margin-top: 5%; font-size: 15px;">
+    <div class="footer-copyright text-center py-3">
+      © 2021 Copyright:
+      <a>Adam and Ellie</a>
+      <br />
+      <a>Last updated: 08 January 2021</a>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
