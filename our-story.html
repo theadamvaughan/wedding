@@ -12,7 +12,7 @@
 
   <title>18th June 2022</title>
   <meta name="description"
-    content="Once a week Jonny, Scotty and Kellett sit down and discuss whats going on here, there and everywhere." />
+    content="Page detailsing the love story for Adam and Ellie." />
 </head>
 
 <body style="max-height: 100%">
@@ -41,40 +41,81 @@
                 <a class="nav-link" href="about-the-day.html">About The Day</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="font-size: 20px;">
-              <li class="nav-item">
-                <a style="color: grey;"
-                  href="&#109;a&#105;l&#116;&#111;:&#115;&#101;&#97;&#115;&#105;&#100;&#101;&#95;&#97;&#118;&#101;&#110;&#117;&#101;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;">Contact
-                  Us
-                </a>
-              </li>
-            </ul>
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0" style="font-size: 20px;">
+                <li class="nav-item">
+                  <a data-toggle="modal" style="color: grey;" data-target="#exampleModalCenter">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
     </div>
-  </div>
 
-  <div class="container" style="max-height: 100%;">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12col-md-12 col-lg-12 col-xl-12">
-        <br />
-        <div class="alert alert-light text-center" style="font-size: 35px;" role="alert">
-          Our Story
-        </div>
-        <div class="alert alert-light text-center" style="font-size: 25px;" role="alert">
-          Adam Vaughan & Ellie-May Bentley
-        </div>
-        <br />
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalCenterTitle">
+              Contact Us
+            </h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/xleoanbk" method="POST">
+              <label class="form-group" for="formGroupExampleInput">Your name:</label>
+              <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Your name here"
+                required />
+              <br />
+              <label class="form-group" for="exampleFormControlInput1">Your email address (optional):</label>
+              <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
+                placeholder="name@example.com" />
+              <br />
+              <label class="form-group" for="exampleFormControlTextarea1">Message:</label>
+              <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
 
-        <img style="max-height: 500px;" src="images//adamAndEllie/adam-ellie1.jpeg" class="rounded mx-auto d-block img-fluid"
-          alt="Four Oaks Farm, Hassocks" />
-        <br />
-        <br />
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+                <input type="submit" value="Send" class="btn btn-primary" />
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="max-height: 100%;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12col-md-12 col-lg-12 col-xl-12">
+          <br />
+          <div class="alert alert-light text-center" style="font-size: 35px;" role="alert">
+            <h1>Our Story</h1>
+          </div>
+          <div class="alert alert-light text-center" style="font-size: 25px;" role="alert">
+            <p>Adam Vaughan & Ellie-May Bentley</p>
+          </div>
+          <br />
+
+          <img style="max-height: 500px;" src="images//adamAndEllie/adam-ellie1.jpeg" class="rounded mx-auto d-block img-fluid"
+            alt="Four Oaks Farm, Hassocks" />
+          <br />
+          <br />
+        </div>
       </div>
     </div>
   </div>
-  <br />
+
   <footer class="page-footer text-secondary" style="margin-top: 5%; font-size: 15px;">
     <div class="footer-copyright text-center py-3">
       © 2021 Copyright:
@@ -93,6 +134,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
