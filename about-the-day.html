@@ -54,6 +54,48 @@
     </div>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalCenterTitle">
+            Contact Us
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="https://formspree.io/f/xleoanbk" method="POST">
+            <label class="form-group" for="formGroupExampleInput">Your name:</label>
+            <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Your name here"
+              required />
+            <br />
+            <label class="form-group" for="exampleFormControlInput1">Your email address (optional):</label>
+            <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com" />
+            <br />
+            <label class="form-group" for="exampleFormControlTextarea1">Message:</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+              <input type="submit" value="Send" class="btn btn-primary" />
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container" style="max-height: 100%;">
     <div class="row">
       <div class="col-xs-12 col-sm-12col-md-12 col-lg-12 col-xl-12">
@@ -108,7 +150,7 @@
       © 2021 Copyright:
       <a>Adam and Ellie</a>
       <br />
-      <a>Last updated: 08 January 2021</a>
+      <a>Page last updated: 27 January 2021</a>
     </div>
   </footer>
 
