@@ -4,8 +4,21 @@
   }
 }
 
-/* Index inline styling */
+/* nav bar styling */
 
 .navbar-nav {
   font-size: 20px;
+}
+
+/* header styling */
+
+.alert {
+  font-size: 25px;
+}
+
+/* footer styling */
+
+.page-footer {
+  margin-top: 5%;
+  font-size: 15px;
 }
