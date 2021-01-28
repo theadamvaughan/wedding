@@ -21,6 +21,7 @@
 .btn-success {
   background-color: #646464;
   border-color: black;
+  width: 120px;
 }
 
 .btn-success:hover {
