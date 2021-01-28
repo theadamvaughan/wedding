@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>About The Day</title>
   <meta name="description"
     content="Page about the wedding day itself. The timings for the day and provides details on the food and drink options." />
 </head>
 
 <body style="max-height: 100%">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -112,11 +115,17 @@
           <h2>Arrival and Ceremony</h2>
         </div>
         <div class="alert alert-light text-center" style="font-size: 20px;" role="alert">
-          <p>2pm - Guests Arrive and Canapés</p>
-          <p>3pm - Ceremony</p>
-          <p>4pm - Food Served</p>
-          <p>5pm - Speeches</p>
-          <p>6pm - Evening Guests Arrive</p>
+          <p><b>Times subject to change</b></p>
+          <p><b>13:00</b> - Guests Arrive - Canapés and Champagne</p>
+          <p><b>14:00</b> - Ceremony</p>
+          <p><b>14:30</b> - Photos/Drinks</p>
+          <p><b>15:30</b> - Hog Roast/Paella</p>
+          <p><b>16:15</b> - Speeches</p>
+          <p><b>16:45</b> - Cut Cake</p>
+          <p><b>17:00</b> - Music Starts/Evening Guests Arrive</p>
+          <p><b>18:30</b> - Pizza Plug Arrive</p>
+          <p><b>22:00</b> - Fireworks</p>
+          <p><b>23:30</b> - Music Ends But Bar Remains Open</p>
         </div>
       </div>
     </div>
@@ -127,7 +136,8 @@
         </div>
         <div class="alert alert-light text-center" role="alert">
           <p>Canapés on arrival with a Hog Roast and Paella provided during the day.</p>
-          <p>Please let us know if you have any dietary requirements.</p>
+          <p>Prior to the day each day guest will receive a unique link so they can select their food options.</p>
+          <p>On the link there will be the option to let us know if you have any dietary requirements.</p>
           <p>In the evening we will have Pizza Plug providing free pizza's for our guests.</p>
         </div>
       </div>
@@ -164,6 +174,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 
 </html>
