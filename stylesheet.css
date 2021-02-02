@@ -23,6 +23,34 @@
   border-bottom: none;
 }
 
+.time {
+  font-family: "Lucida Handwriting";
+  text-decoration: underline;
+}
+
+.display-5 {
+  font-size: 25px;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  border: 3px double #6c757d;
+  padding-top: 1rem;
+}
+
+.mb-0 {
+  border: none;
+  padding: 0;
+}
+
+.jumbotron {
+  padding: 32px 16px;
+}
+
 /* carosel styling */
 
 .venue,
@@ -79,5 +107,17 @@
 @media screen and (max-width: 600px) {
   .acc-header {
     font-size: 20px;
+  }
+
+  .display-5 {
+    font-size: 20px;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 17px;
   }
 }
