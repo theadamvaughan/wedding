@@ -61,6 +61,12 @@ h3 {
   justify-content: center;
 }
 
+.accordion,
+.taxi,
+.margin {
+  margin: 0 5rem;
+}
+
 /* carosel styling */
 
 .venue,
@@ -112,6 +118,14 @@ h3 {
 .page-footer {
   margin-top: 5%;
   font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .accordion,
+  .taxi,
+  .margin {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
